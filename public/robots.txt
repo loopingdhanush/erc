@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://landingeea.vercel.app/sitemap.xml

@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Kollektif';
+  src: url('/fonts/Kollektif.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kollektif';
+  src: url('/fonts/Kollektif-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.kollektif-font {
+  font-family: 'Kollektif', 'Open Sans', Arial, sans-serif;
+}
+
+
+.futura-font {
+  font-family: 'Futura Std', sans-serif;                                      
+}
