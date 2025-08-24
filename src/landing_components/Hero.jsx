@@ -8,7 +8,7 @@ export default function Hero() {
     <div className="px-2">
       
 
-      <section className="relative flex flex-col bg-gradient-to-t from-blue-300 to-white rounded-3xl border border-blue-500 overflow-hidden">
+      <section className="relative flex flex-col bg-gradient-to-t from-white to-white rounded-3xl border border-blue-500 overflow-hidden">
         <div className="pt-12 px-6 flex flex-col relative z-10">
           <motion.span
             initial={{ opacity: 0, y: -20 }}

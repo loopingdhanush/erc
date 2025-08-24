@@ -11,7 +11,7 @@ import Swiperimg from "./landing_components/swiper";
 
 export default function Landing() {
   return (
-    <div  className="bg-blue-200 ">
+    <div  className="bg-blue-100">
     <div className="h-24 "></div>
     <div className="max-w-7xl mx-auto px-2 ">
 
