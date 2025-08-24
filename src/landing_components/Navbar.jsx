@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import logoFull from "../assets/main_club_logo.png";
-
+import {motion} from "framer-motion"
 import { Link } from "react-router-dom";
 
 
@@ -38,6 +38,12 @@ export default function Navbar() {
         />
       )}
 
+      <motion.div
+      className="z-50"
+      initial={{ y: -80, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}>
+
       <div className="fixed top-4 left-1/2 -translate-x-1/2 z-50
                 w-[90%] max-w-6xl 
                 bg-white/80 backdrop-blur-md
@@ -61,14 +67,11 @@ export default function Navbar() {
             </div>
           </div>
 
-
-
           <div className="hidden lg:flex items-center space-x-4">
             <Link to="/" className="font-medium border-r border-gray-800 pr-4 ">Home</Link>
             <Link to="/Resources" className="font-medium  border-r border-gray-800 pr-4  "> Event Calander</Link>
             <Link to="/Resources" className="font-medium  ">Flagship Events</Link>
            </div>
-
 
             <Link to="/privileges" 
             className="hidden lg:block text-sm font-semibold text-white geist
@@ -76,12 +79,6 @@ export default function Navbar() {
             border border-blue-500 shadow-sm hover:shadow-lg transition duration-300 ease-in-out
             rounded-xl px-4 py-1.5 h-8">
             Contact Us</Link>
-
-         
-
-          
-          
-
           
           <div className="lg:hidden flex items-center">
             <button onClick={() => setIsOpen(true)} className="text-gray-600 dark:text-gray-300">
@@ -95,6 +92,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+      </motion.div>
 
 
       <div className={`fixed top-0 left-0 w-64 h-full bg-white dark:bg-gray-800 text-black dark:text-white shadow-lg transform ${isOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300 z-50`}>
@@ -119,7 +117,7 @@ export default function Navbar() {
       </div>
 
       
-      <div className="h-16"></div>
+      
     </>
   );
 }
