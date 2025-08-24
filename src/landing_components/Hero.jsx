@@ -8,7 +8,7 @@ export default function Hero() {
     <div className="px-2">
       
 
-      <section className="relative flex flex-col bg-blue-100 rounded-3xl border border-blue-500 overflow-hidden">
+      <section className="relative flex flex-col bg-gradient-to-t from-blue-300 to-white rounded-3xl border border-blue-500 overflow-hidden">
         <div className="pt-12 px-6 flex flex-col relative z-10">
           <motion.span
             initial={{ opacity: 0, y: -20 }}
@@ -54,7 +54,7 @@ export default function Hero() {
               </button>
             </a>
             <Link to="/contact">
-              <button className="w-48 px-5 py-2 text-sm font-semibold text-blue-500 border-2 border-blue-500 rounded-xl hover:bg-blue-100 transition-colors duration-200 cursor-pointer">
+              <button className="w-48 px-5 py-2 text-sm font-semibold text-blue-500 border-2 border-blue-500 rounded-xl bg-blue-50 hover:bg-blue-100 transition-colors duration-200 cursor-pointer">
                 Contact Us
               </button>
             </Link>

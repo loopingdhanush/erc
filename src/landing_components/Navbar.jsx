@@ -45,7 +45,7 @@ export default function Navbar() {
       transition={{ duration: 0.6, ease: "easeOut" }}>
 
       <div className="fixed top-4 left-1/2 -translate-x-1/2 z-50
-                w-[90%] max-w-6xl 
+                w-[95%] md:w-[90%] max-w-6xl 
                 bg-white/80 backdrop-blur-md
                 shadow-lg border border-[#374291]/30 
                 px-6 py-1 rounded-2xl">
@@ -69,8 +69,8 @@ export default function Navbar() {
 
           <div className="hidden lg:flex items-center space-x-4">
             <Link to="/" className="font-medium border-r border-gray-800 pr-4 ">Home</Link>
-            <Link to="/Resources" className="font-medium  border-r border-gray-800 pr-4  "> Event Calander</Link>
-            <Link to="/Resources" className="font-medium  ">Flagship Events</Link>
+            <Link to="/" className="font-medium  border-r border-gray-800 pr-4  ">About Us</Link>
+            <Link to="/" className="font-medium">Benefits</Link>
            </div>
 
             <Link to="/privileges" 

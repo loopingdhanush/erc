@@ -36,8 +36,9 @@ const courseinfo = [
 
 export default function Course() {
   return (
-    <section className="relative bg-gradient-to-br from-blue-50 to-white dark:from-gray-950 dark:to-gray-900">
+    <section className="relative bg-gradient-to-b from-white to-blue-200 ">
       <div className="mx-4 md:pt-20 pt-10">
+        
         <motion.h2
           className="kollektif-font text-3xl md:text-5xl font-bold 
                      text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 
@@ -47,6 +48,9 @@ export default function Course() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
+          <h1 className="text-md md:text-xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-900 pb-2">
+          Benefits
+        </h1>
           Why Join Erode Runners?
         </motion.h2>
 
@@ -69,7 +73,7 @@ export default function Course() {
                          hover:scale-105 hover:shadow-2xl"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3, delay: index * 0.1 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
               <div className="w-16 h-16 mx-auto flex items-center justify-center 

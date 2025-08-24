@@ -47,12 +47,16 @@ const timelineData = [
 
 export default function Timeline() {
   return (
-    <section className="relative bg-gradient-to-br from-blue-50 to-white dark:from-gray-950 dark:to-gray-900 pt-20">
+    <section className="relative bg-gradient-to-b from-blue-200 to-white pt-20">
       <div className="max-w-5xl mx-auto px-6">
         {/* Heading */}
+        <h1 className="text-md md:text-xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-900 pb-2">
+          History
+        </h1>
         <h2 className="kollektif-font text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 text-center">
           Timeline
         </h2>
+        
         <p className="mt-3 text-gray-600 text-lg md:text-xl max-w-2xl mx-auto text-center">
           A journey from a small running group to hosting one of Tamil Nadu’s most anticipated marathons.
         </p>
@@ -70,7 +74,7 @@ export default function Timeline() {
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.4, delay: index * 0.1 }}
+        transition={{ duration: 1, delay: index * 0.1 }}
       >
         {/* Year marker */}
         <div className="flex items-center justify-center absolute left-0 top-6 w-16 h-8 bg-blue-500 text-white text-sm font-semibold rounded-md shadow">

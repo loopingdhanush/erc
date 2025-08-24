@@ -34,10 +34,14 @@ export default function About() {
   const chapters = useCountUp(5, 2);
 
   return (
-    <section className="py-16 mt-8 px-4 bg-blue-100">
+    <section className="py-16 mt-8 px-4 bg-gradient-to-b from-blue-200 to-white">
       <div className="max-w-6xl mx-auto">
+
+        <h1 className="text-md md:text-xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-900 pb-2">
+          About Us
+        </h1>
  
-        <h1 className="text-3xl md:text-5xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 mb-8">
+        <h1 className="text-3xl md:text-5xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 mb-8 pb-2">
           The Journey of Erode Runners
         </h1>
         
