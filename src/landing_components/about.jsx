@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/navigation";
 
 
 const useCountUp = (end, duration = 2) => {
@@ -32,14 +34,14 @@ export default function About() {
   const chapters = useCountUp(5, 2);
 
   return (
-    <section className="py-16 mt-12 md:mt-32 px-4 bg-blue-100">
+    <section className="py-16 mt-8 px-4 bg-blue-100">
       <div className="max-w-6xl mx-auto">
  
-        <h1 className="text-3xl md:text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 ">
+        <h1 className="text-3xl md:text-5xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 mb-8">
           The Journey of Erode Runners
         </h1>
-
-        <p className="text-center pt-8 text-gray-900 mx-4">
+        
+        <p className="text-center  text-gray-900 mx-4">
           Dr. Madhushankar, Mr. Krishnamoorthy, and Dr. Arunandhi Chelvan
           establishes the Erode Runners Club with the goal of inspiring the
           people of Erode to participate in marathon races began with a modest
@@ -80,21 +82,23 @@ export default function About() {
         {/* Swiper Section */}
         <div className="mt-16">
          <Swiper
-            spaceBetween={20}
-            slidesPerView={1}
+            modules={[Autoplay]}
             loop={true}
-            freeMode={true} 
-            speed={1000} 
+            freeMode={true}
+            freeModeMomentum={false}
+            slidesPerView={1}
+            spaceBetween={20}
+            speed={2000} // bigger = slower continuous scroll
             autoplay={{
-                delay: 0, 
-                disableOnInteraction: false,
-                pauseOnMouseEnter: false, 
+              delay: 0, // no pause
+              disableOnInteraction: false,
+              pauseOnMouseEnter: false,
             }}
             breakpoints={{
-                640: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
+              640: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
             }}
-            >
+          >
             <SwiperSlide>
               <div className="bg-white rounded-2xl shadow-md  flex justify-center items-center">
                 <img

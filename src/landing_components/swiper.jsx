@@ -16,13 +16,14 @@ const images = [
 
 export default function SwiperImg() {
   return (
-    <div className="h-full">
-        
-    <motion.div className="border absolute h-full rounded-2xl shadow-2xl md:w-[400px] relative overflow-hidden md:mx-0 mx-2" 
+ <div className="h-full w-full md:max-w-[400px] flex justify-center">
+  <motion.div
+    className="border absolute h-full rounded-2xl max-w-[400px] shadow-2xl relative overflow-hidden md:mx-0 mx-2"
     initial={{ opacity: 0, y: -60 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, amount: 0.2 }}
-    transition={{ duration: 0.8, ease: "easeOut" }}>
+    transition={{ duration: 0.8, ease: "easeOut" }}
+  >
       <Swiper
         modules={[Navigation, Autoplay]}
         navigation={{
@@ -47,11 +48,16 @@ export default function SwiperImg() {
       alt={`Slide ${index + 1}`}
       className="rounded-2xl object-cover w-full h-full transform transition-transform duration-[7000ms] ease-in-out scale-105 "
     />
+
+    
    
-    <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-black/100 to-transparent rounded-t-2xl"></div>
-    <p className="absolute top-4 left-4 text-2xl font-bold text-white">Erode Marathon - 2025 </p>
-    <p className="absolute top-12 left-4 text-sm font-semibold text-white">29 October 2025</p>
-    <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-black/100 to-transparent rounded-b-2xl"></div>
+    <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-black/100 to-transparent rounded-t-2xl"></div>
+    <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-black/100 to-transparent rounded-b-2xl"></div>
+    <p className=" absolute top-4 left-4 text-2xl font-bold text-white">Featured Events</p>
+    <div className="absolute bottom-4 left-4">
+        <p className=" text-sm font-semibold text-white">29 October 2025</p>
+        <p className=" text-lg font-bold text-white">Erode Marathon - 2025 </p>
+    </div>
   </div>
 </SwiperSlide>
 

@@ -3,12 +3,12 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 const events = {
-  "2025-07-06": ["Hyderbad Marathon - 2025"],
-  "2025-08-13": ["Erode Marathon - 2025"],
-  "2025-08-20": ["Salem Marathon - 2025"],
+  "2025-08-25": ["Hyderbad Marathon - 2025"],
+  "2025-07-13": ["Erode Marathon - 2025"],
+  "2025-07-20": ["Salem Marathon - 2025"],
   "2025-07-27": ["Kangayam Marathon - 2025"],
-  "2025-08-03": ["Senthil Marathon - 2025"],
-  "2025-08-10": ["Erode Runners - Club Run"],
+  "2025-07-03": ["Senthil Marathon - 2025"],
+  "2025-07-10": ["Erode Runners - Club Run"],
 };
 
 function formatMonth(date) {
@@ -42,7 +42,7 @@ export default function CalendarEvents() {
 
   return (
     <motion.section
-      className=" md:w-[400px]"
+      className="max-w-full md:max-w-[400px]"
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
@@ -60,7 +60,7 @@ export default function CalendarEvents() {
         >
           <div className="w-full max-w-md md:mx-0 mx-2 bg-white shadow-xl rounded-2xl overflow-hidden border border-blue-500">
 
-            <div className="bg-blue-500 text-white text-center py-2 font-bold text-lg">
+            <div className="bg-blue-500 text-white text-center py-2 font-semibold text-md">
               Event's Calendar
             </div>
 
@@ -94,7 +94,7 @@ export default function CalendarEvents() {
                       {events[date].map((event, i) => (
                         <div
                           key={i}
-                          className="grid grid-cols-6 items-center px-4 py-3 border-b 
+                          className="grid grid-cols-6 items-center px-4 py-2 border-b 
                                      hover:bg-blue-50 transition cursor-pointer"
                         >
                           <div className="mr-2 text-blue-600 font-bold col-span-1 text-center text-lg">
