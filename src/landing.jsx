@@ -6,7 +6,7 @@ import Final from "./landing_components/final";
 import CalendarEvents from "./landing_components/calander";
 import Timeline from "./landing_components/timeline";
 import Swiperimg from "./landing_components/swiper";
-import FAQ from "./landing_components/faq.JSX";
+import FAQ from "./landing_components/faq";
 
 export default function Landing() {
   return (
