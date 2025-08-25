@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import heroimage from "../assets/heroimg.png";
+import heroimage from "../assets/heroimg.webp";
 import { Link } from "react-router-dom";
 
 export default function Hero() {
