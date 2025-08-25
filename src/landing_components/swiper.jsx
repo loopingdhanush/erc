@@ -18,7 +18,7 @@ export default function SwiperImg() {
   return (
  <div className="h-full w-full md:max-w-[400px] flex justify-center">
   <motion.div
-    className="border absolute h-full rounded-2xl max-w-[400px] shadow-2xl relative overflow-hidden md:mx-0 ml-2"
+    className="border absolute h-full rounded-2xl max-w-[400px] shadow-2xl relative overflow-hidden md:mx-0 "
     initial={{ opacity: 0, y: -60 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, amount: 0.2 }}
