@@ -63,20 +63,26 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* Hero Image at the bottom */}
-        {/* Hero Image Container */}
+        
 <div className="w-full h-60 overflow-hidden relative mt-8 md:mt-16 rounded-b-2xl">
-  <motion.img
-    src={heroimage}
-    alt="Hero runners"
-    loading="eager" 
-    decoding="async" 
-    initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
-    animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-    transition={{ duration: 0.7, ease: "easeOut" }}
-    className="w-full h-full object-cover"
-  />
+  <picture>
+   
+    <source srcSet={heroimage} type="image/webp" />
+
+    
+    <motion.img
+      src={heroimage} 
+      alt="Hero runners"
+      loading="eager"
+      decoding="async"
+      initial={{ opacity: 0, scale: 1.05 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+      className="w-full h-full object-cover"
+    />
+  </picture>
 </div>
+
 
 
       </section>
