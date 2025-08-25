@@ -97,8 +97,7 @@ export default function Navbar() {
 
            <button
   onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" })}
-  className="hidden lg:block text-sm font-semibold text-white geist
-    text-[#007cc2] border-2 border-[#007cc2] bg-blue-100 shadow-sm hover:shadow-lg 
+  className="hidden lg:block text-sm font-semibold text-[#007cc2] border-2 border-[#007cc2] bg-blue-100 shadow-sm hover:shadow-lg 
     transition duration-300 ease-in-out
     rounded-xl px-4 py-1 h-8"
 >
