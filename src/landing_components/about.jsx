@@ -34,7 +34,7 @@ export default function About({id}) {
   const chapters = useCountUp(5, 2);
 
   return (
-    <div className="mx-4  ">
+    <div className="mx-4">
     <section id={id} className="relative py-16 mt-8 px-4 max-w-7xl mx-auto rounded-3xl overflow-hidden">
       {/* Background video */}
       <video
@@ -47,8 +47,8 @@ export default function About({id}) {
       </video>
 
       {/* Dark overlay for readability */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black/60 z-0"></div>
-       <div className="absolute top-0 left-0 w-full h-96 bg-gradient-to-b from-black/100 to-transparent rounded-t-2xl"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black/30 z-0"></div>
+       <div className="absolute top-0 left-0 w-full md:h-96 h-[900px] bg-gradient-to-b from-black/100 to-transparent rounded-t-2xl"></div>
 
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto text-white">

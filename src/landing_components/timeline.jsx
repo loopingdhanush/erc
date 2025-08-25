@@ -50,7 +50,7 @@ export default function Timeline() {
     <section className="relative pt-20">
       <div className="max-w-5xl mx-auto px-6">
         {/* Heading */}
-        <h1 className="text-md md:text-xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-[#007CC2] to-blue-600 pb-2">
+        <h1 className="text-lg md:text-xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-[#007CC2] to-blue-600 pb-2">
           History
         </h1>
         <h2 className="kollektif-font text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#007CC2] to-blue-400 text-center">

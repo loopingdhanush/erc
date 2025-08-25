@@ -25,11 +25,13 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text 
-              bg-gradient-to-r from-[#374291] via-blue-500 to-purple-600 
+               bg-gradient-to-r from-[#007CC2] to-blue-900
               tracking-tight leading-tight text-center drop-shadow-lg"
           >
             Live to Run <br />
-            <span className="text-[#374291] drop-shadow-sm">Run to Live</span>
+            <span className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text 
+               bg-gradient-to-r to-[#007CC2] from-blue-900
+              tracking-tight leading-tight text-center drop-shadow-lg">Run to Live</span>
           </motion.h1>
 
           <motion.p
@@ -49,7 +51,7 @@ export default function Hero() {
             className="flex flex-wrap gap-4 mt-6 mx-auto justify-center items-center"
           >
             <a>
-              <button className="w-48 px-5 py-2 text-sm font-semibold text-white bg-[#374291] border-2 border-[#007cc2] rounded-xl hover:bg-[#007cc2] transition-colors duration-200 cursor-pointer">
+              <button className="w-48 px-5 py-2 text-sm font-semibold text-white bg-gradient-to-r from-[#007CC2] to-[#374291] border-2 border-blue-900 rounded-xl hover:bg-[#007cc2] transition-colors duration-200 cursor-pointer">
                 Erode Marathon - 2025
               </button>
             </a>

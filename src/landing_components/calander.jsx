@@ -69,9 +69,9 @@ export default function CalendarEvents() {
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 0.2 }}
       >
-        <div className="w-full max-w-md md:mx-0 mx-2 bg-white shadow-xl rounded-2xl overflow-hidden border-2 border-[#374291]">
+        <div className="w-full max-w-md md:mx-0 mx-2 bg-white shadow-xl rounded-2xl overflow-hidden border border-[#374291]">
           {/* Header */}
-          <div className="bg-[#374291] text-white text-center py-2 font-semibold text-md">
+          <div className=" bg-gradient-to-r from-[#007CC2] to-blue-900 text-white text-center text-lg py-2 font-bold text-md">
             Event's Calendar
           </div>
 
@@ -83,7 +83,7 @@ export default function CalendarEvents() {
             >
               <ChevronLeft className="w-5 h-5 text-blue-600" />
             </button>
-            <span className="font-semibold text-gray-800">
+            <span className="font-semibold text-sm text-gray-800">
               {formatMonth(currentMonth)}
             </span>
             <button
@@ -105,19 +105,19 @@ export default function CalendarEvents() {
                     className="flex items-center bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition border border-[#374291]"
                   >
                     {/* Date Box */}
-                    <div className="w-16 bg-[#374291] text-white font-bold text-center py-3 flex-shrink-0">
+                    <div className="w-16 bg-gradient-to-r from-[#007CC2] to-blue-900 text-white font-bold text-center p-2 md:p-4 flex-shrink-0">
                       {String(day).padStart(2, "0")}
                     </div>
 
                     {/* Event Title with Link */}
-                    <div className="flex-1 px-4 py-3 text-gray-800">
+                    <div className="flex-1 px-4  text-gray-800">
                       {events[date].map((event, i) => (
                         <a
                           key={i}
                           href={event.url} // event-specific link
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="font-medium hover:text-blue-600 transition cursor-pointer block"
+                          className="font-medium hover:text-blue-600 transition cursor-pointer block "
                         >
                           {event.title}
                         </a>
