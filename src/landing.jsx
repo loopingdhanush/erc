@@ -13,17 +13,55 @@ export default function Landing() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    const handleLoad = () => setIsLoaded(true);
+    const images = Array.from(document.images);
+    const videos = Array.from(document.querySelectorAll("video"));
 
-    if (document.readyState === "complete") {
-      // Page already loaded
+    const totalAssets = images.length + videos.length;
+    let loadedAssets = 0;
+
+    if (totalAssets === 0) {
       setIsLoaded(true);
-    } else {
-      // Wait for full load
-      window.addEventListener("load", handleLoad);
+      return;
     }
 
-    return () => window.removeEventListener("load", handleLoad);
+    const checkAllLoaded = () => {
+      loadedAssets += 1;
+      if (loadedAssets === totalAssets) {
+        setIsLoaded(true);
+      }
+    };
+
+    // Listen for images
+    images.forEach((img) => {
+      if (img.complete) {
+        checkAllLoaded();
+      } else {
+        img.addEventListener("load", checkAllLoaded);
+        img.addEventListener("error", checkAllLoaded);
+      }
+    });
+
+    // Listen for videos
+    videos.forEach((video) => {
+      if (video.readyState >= 3) {
+        // HAVE_FUTURE_DATA means enough is loaded
+        checkAllLoaded();
+      } else {
+        video.addEventListener("loadeddata", checkAllLoaded);
+        video.addEventListener("error", checkAllLoaded);
+      }
+    });
+
+    return () => {
+      images.forEach((img) => {
+        img.removeEventListener("load", checkAllLoaded);
+        img.removeEventListener("error", checkAllLoaded);
+      });
+      videos.forEach((video) => {
+        video.removeEventListener("loadeddata", checkAllLoaded);
+        video.removeEventListener("error", checkAllLoaded);
+      });
+    };
   }, []);
 
   if (!isLoaded) {
