@@ -68,17 +68,43 @@ export default function Navbar() {
           </div>
 
           <div className="hidden lg:flex items-center space-x-4">
-            <Link to="/" className="font-medium border-r border-gray-800 pr-4 ">Home</Link>
-            <Link to="/" className="font-medium  border-r border-gray-800 pr-4  ">About Us</Link>
-            <Link to="/" className="font-medium">Benefits</Link>
-           </div>
+  <button
+    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+    className="font-medium border-r border-gray-800 pr-4"
+  >
+    Home
+  </button>
 
-            <Link to="/privileges" 
-            className="hidden lg:block text-sm font-semibold text-white geist
-            bg-blue-400 
-            border border-blue-500 shadow-sm hover:shadow-lg transition duration-300 ease-in-out
-            rounded-xl px-4 py-1.5 h-8">
-            Contact Us</Link>
+  <button
+    onClick={() =>
+      document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })
+    }
+    className="font-medium border-r border-gray-800 pr-4"
+  >
+    About Us
+  </button>
+
+  <button
+    onClick={() =>
+      document.getElementById("benefits")?.scrollIntoView({ behavior: "smooth" })
+    }
+    className="font-medium"
+  >
+    Benefits
+  </button>
+</div>
+
+
+           <button
+  onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" })}
+  className="hidden lg:block text-sm font-semibold text-white geist
+    text-[#007cc2] border-2 border-[#007cc2] bg-blue-100 shadow-sm hover:shadow-lg 
+    transition duration-300 ease-in-out
+    rounded-xl px-4 py-1 h-8"
+>
+  Contact Us
+</button>
+
           
           <div className="lg:hidden flex items-center">
             <button onClick={() => setIsOpen(true)} className="text-gray-600 dark:text-gray-300">
@@ -108,8 +134,8 @@ export default function Navbar() {
 
           
           <Link to="/" className="block font-medium  " onClick={() => setIsOpen(false)}>Home</Link>
-          <Link to="/Resources" className="block font-medium  " onClick={() => setIsOpen(false)}>Resources</Link>
-          <Link to="/contact" className="block font-medium  " onClick={() => setIsOpen(false)}>Contact</Link>
+          <Link to="/Resources" className="block font-medium  " onClick={() => setIsOpen(false)}>Benefits</Link>
+          <Link to="/contact" className="block font-medium  " onClick={() => setIsOpen(false)}></Link>
           
           
           <hr className="border-gray-300 dark:border-gray-600" /> 

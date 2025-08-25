@@ -47,10 +47,10 @@ const timelineData = [
 
 export default function Timeline() {
   return (
-    <section className="relative bg-gradient-to-b from-blue-200 to-white pt-20">
+    <section className="relative pt-20">
       <div className="max-w-5xl mx-auto px-6">
         {/* Heading */}
-        <h1 className="text-md md:text-xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-900 pb-2">
+        <h1 className="text-md md:text-xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-blue-600 pb-2">
           History
         </h1>
         <h2 className="kollektif-font text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 text-center">
@@ -64,7 +64,7 @@ export default function Timeline() {
         {/* Timeline */}
         <div className="relative mt-16">
   {/* Timeline line */}
-  <div className="absolute left-[32px] top-6 bottom-0 w-1 bg-gradient-to-b from-blue-400 to-blue-200 dark:from-blue-600 dark:to-blue-400 "></div>
+  <div className="absolute left-[32px] top-6 bottom-0 w-1 bg-gradient-to-b from-blue-500 to-white "></div>
 
   <div className="space-y-16">
     {timelineData.map((item, index) => (

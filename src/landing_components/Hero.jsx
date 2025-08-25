@@ -8,7 +8,7 @@ export default function Hero() {
     <div className="px-2">
       
 
-      <section className="relative flex flex-col bg-gradient-to-t from-white to-white rounded-3xl border border-blue-500 overflow-hidden">
+      <section className="relative flex flex-col bg-gradient-to-t from-white to-white rounded-3xl border-2 border-[#374291] overflow-hidden">
         <div className="pt-12 px-6 flex flex-col relative z-10">
           <motion.span
             initial={{ opacity: 0, y: -20 }}
@@ -49,27 +49,31 @@ export default function Hero() {
             className="flex flex-wrap gap-4 mt-6 mx-auto justify-center items-center"
           >
             <a>
-              <button className="w-48 px-5 py-2 text-sm font-semibold text-white bg-blue-500 border-2 border-blue-500 rounded-xl hover:bg-blue-600 transition-colors duration-200 cursor-pointer">
+              <button className="w-48 px-5 py-2 text-sm font-semibold text-white bg-[#374291] border-2 border-[#007cc2] rounded-xl hover:bg-[#007cc2] transition-colors duration-200 cursor-pointer">
                 Erode Marathon - 2025
               </button>
             </a>
-            <Link to="/contact">
-              <button className="w-48 px-5 py-2 text-sm font-semibold text-blue-500 border-2 border-blue-500 rounded-xl bg-blue-50 hover:bg-blue-100 transition-colors duration-200 cursor-pointer">
+            
+              <button onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" })} className="w-48 px-5 py-2 text-sm font-semibold text-[#007cc2] border-2 border-[#007cc2] rounded-xl bg-blue-50 hover:bg-blue-100 transition-colors duration-200 cursor-pointer">
                 Contact Us
               </button>
-            </Link>
+            
           </motion.div>
         </div>
 
         {/* Hero Image at the bottom */}
-        <motion.img
-          src={heroimage}
-          alt="Hero runners"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.3, delay: 0.4 }}
-          className="w-full object-contain mt-8"
-        />
+        {/* Hero Image Container */}
+<div className="w-full h-60 overflow-hidden relative mt-8 md:mt-16 rounded-b-2xl">
+  <motion.img
+    src={heroimage}
+    alt="Hero runners"
+    initial={{ opacity: 0, y: 50 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1.3, delay: 0.4 }}
+    className="w-full h-full object-cover scale-110 md:scale-100"
+  />
+</div>
+
       </section>
     </div>
   );

@@ -34,28 +34,28 @@ const courseinfo = [
   },
 ];
 
-export default function Course() {
+export default function Course({id}) {
   return (
-    <section className="relative bg-gradient-to-b from-white to-blue-200 ">
+    <section id={id} className="relative bg-white ">
       <div className="mx-4 md:pt-20 pt-10">
         
         <motion.h2
           className="kollektif-font text-3xl md:text-5xl font-bold 
-                     text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 
+                     text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 
                      text-center max-w-2xl mx-auto"
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h1 className="text-md md:text-xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-900 pb-2">
+          <h1 className="text-lg md:text-xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-blue-600 pb-2">
           Benefits
         </h1>
           Why Join Erode Runners?
         </motion.h2>
 
         <motion.p
-          className="text-xl text-gray-900 dark:text-orange-100 text-center max-w-3xl mx-auto mt-8 mb-2 md:mb-12 futura-font"
+          className="text-xl text-gray-800 dark:text-orange-100 text-center max-w-3xl mx-auto mt-8 mb-6 md:mb-12 futura-font"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.3 }}
@@ -64,7 +64,7 @@ export default function Course() {
           Being part of our club isn’t just about running, it’s about running smarter, together.
         </motion.p>
 
-        <div className="max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <div className="max-w-6xl mx-auto px-6 md:py-12 py-4  grid grid-cols-1 lg:grid-cols-3 gap-12">
           {courseinfo.map((course, index) => (
             <motion.div
               key={index}

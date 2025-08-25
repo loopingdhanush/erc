@@ -1,9 +1,7 @@
 import Hero from "./landing_components/Hero";
-import TestimonialScroller from "./landing_components/testimonial";
 import Footer from "./landing_components/footer";
 import Course from "./landing_components/course";
 import About from "./landing_components/about";
-import Instagram from "./landing_components/instagram";
 import Final from "./landing_components/final";
 import CalendarEvents from "./landing_components/calander";
 import Timeline from "./landing_components/timeline";
@@ -19,11 +17,19 @@ export default function Landing() {
 
   <div className="md:col-span-2 ">
     <Hero />
+    <div className="flex md:hidden flex-row gap-4 justify-center items-center mt-6">
+      <span className="text-gray-500 ">Scroll</span>
+      <div className="w-6 h-10 border-2 border-gray-500 rounded-full flex justify-center items-start p-1">
+        <div className="w-2 h-2 bg-gray-500 rounded-full animate-bounce mt-1"></div>
+      </div>
+      <span className="text-gray-500 ">down</span>
+    </div>
+    
   </div>
 
 
   <div className="flex flex-col gap-8 md:gap-4">
-    <div className="flex-1">
+    <div className="flex-1 ">
       <CalendarEvents />
       
 
@@ -35,11 +41,17 @@ export default function Landing() {
     </div>
   </div>
 </div>
-
+<div className="md:flex hidden flex-row gap-4 justify-center items-center mt-6">
+      <span className="text-gray-500 ">Scroll</span>
+      <div className="w-6 h-10 border-2 border-gray-500 rounded-full flex justify-center items-start p-1">
+        <div className="w-2 h-2 bg-gray-500 rounded-full animate-bounce mt-1"></div>
+      </div>
+      <span className="text-gray-500 ">down</span>
+    </div>
 </div>
 
-      <About />
-      <Course />
+      <About id="about"/>
+      <Course id="benefits"/>
       <Timeline/>
       <Final/>
       <Footer/>
