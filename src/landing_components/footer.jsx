@@ -36,9 +36,9 @@ export default function Footer() {
               Quick Links
             </h3>
             <ul>
-              <li><a href="/" className="text-gray-400 hover:text-white transition-colors duration-200 futura-font">Home</a></li>
-              <li><a href="/about" className="text-gray-400 hover:text-white transition-colors duration-200 futura-font">About Us</a></li>
-              <li><a href="/contact" className="text-gray-400 hover:text-white transition-colors duration-200 futura-font">Contact</a></li>
+              <li><a onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="text-gray-400 hover:text-white transition-colors duration-200 futura-font cursor-pointer">Home</a></li>
+              <li><a onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })} className="text-gray-400 hover:text-white transition-colors duration-200 futura-font cursor-pointer">About Us</a></li>
+              <li><a onClick={() => document.getElementById("benefits")?.scrollIntoView({ behavior: "smooth" })} className="text-gray-400 hover:text-white transition-colors duration-200 futura-font cursor-pointer">Benefits</a></li>
             </ul>
           </div>
 

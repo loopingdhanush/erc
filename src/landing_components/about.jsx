@@ -34,7 +34,8 @@ export default function About({id}) {
   const chapters = useCountUp(5, 2);
 
   return (
-    <section id={id} className="relative py-16 mt-8 px-4">
+    <div className="mx-4  ">
+    <section id={id} className="relative py-16 mt-8 px-4 max-w-7xl mx-auto rounded-3xl overflow-hidden">
       {/* Background video */}
       <video
         autoPlay
@@ -46,15 +47,17 @@ export default function About({id}) {
       </video>
 
       {/* Dark overlay for readability */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black/70 z-0"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black/60 z-0"></div>
+       <div className="absolute top-0 left-0 w-full h-96 bg-gradient-to-b from-black/100 to-transparent rounded-t-2xl"></div>
 
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto text-white">
         {/* Headings */}
-        <h1 className="text-md md:text-2xl font-normal kollektif-font text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200 pb-2"> About Us </h1> <h1 className="text-3xl md:text-5xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-400 mb-8 pb-2"> The Journey of Erode Runners </h1>
+        <h1 className="text-md md:text-2xl font-normal kollektif-font text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-200 pb-2 text-shadow-lg text-shadow-black"> About Us </h1> 
+        <h1 className="text-3xl md:text-5xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-400 mb-8 pb-2 text-shadow-sm"> The Journey of Erode Runners </h1>
 
         {/* Paragraph */}
-        <p className="text-center text-gray-100 mx-4">
+        <p className="text-center text-gray-100 mx-4 font-semibold text-shadow-xl">
           Dr. Madhushankar, Mr. Krishnamoorthy, and Dr. Arunandhi Chelvan
           established the Erode Runners Club with the goal of inspiring the
           people of Erode to participate in marathon races. It began with a
@@ -88,7 +91,11 @@ export default function About({id}) {
           ))}
         </div>
 
-        {/* Swiper Section */}
+       
+      </div>
+    </section>
+
+     {/* Swiper Section */}
         <div className="mt-16">
           <Swiper
             modules={[Autoplay]}
@@ -116,7 +123,7 @@ export default function About({id}) {
               "https://eroderunnersclub.com/wp-content/uploads/2024/03/winners-scaled.jpg",
             ].map((img, index) => (
               <SwiperSlide key={index}>
-                <div className="bg-white rounded-2xl shadow-md flex justify-center items-center p-2">
+                <div className="bg-white rounded-2xl shadow-md flex justify-center items-center ">
                   <img
                     src={img}
                     alt={`Runner ${index + 1}`}
@@ -127,7 +134,6 @@ export default function About({id}) {
             ))}
           </Swiper>
         </div>
-      </div>
-    </section>
+    </div>
   );
 }

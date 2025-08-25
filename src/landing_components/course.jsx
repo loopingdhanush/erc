@@ -40,15 +40,13 @@ export default function Course({id}) {
       <div className="mx-4 md:pt-20 pt-10">
         
         <motion.h2
-          className="kollektif-font text-3xl md:text-5xl font-bold 
-                     text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 
-                     text-center max-w-2xl mx-auto"
+          className="kollektif-font text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#007CC2] to-blue-400 text-center"
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h1 className="text-lg md:text-xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-blue-600 pb-2">
+          <h1 className="text-md md:text-xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-[#007CC2] to-blue-600 pb-2">
           Benefits
         </h1>
           Why Join Erode Runners?
@@ -68,9 +66,9 @@ export default function Course({id}) {
           {courseinfo.map((course, index) => (
             <motion.div
               key={index}
-              className="bg-blue-50 dark:bg-gray-900 border-2 border-blue-400 
+              className="bg-blue-10 dark:bg-gray-900 border-2 border-[#007CC2] 
                          p-8 rounded-3xl shadow-lg transform transition duration-300 
-                         hover:scale-105 hover:shadow-2xl"
+                         hover:scale-105 hover:shadow-2xl bg-blue-50"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -81,7 +79,7 @@ export default function Course({id}) {
                 <img src={course.icon} alt="Icon" className="w-8 h-8" />
               </div>
 
-              <h3 className="text-2xl text-blue-500 font-bold text-center mb-4 kollektif-font">
+              <h3 className="text-2xl text-[#007CC2] font-bold text-center mb-4 kollektif-font">
                 {course.title}
               </h3>
 

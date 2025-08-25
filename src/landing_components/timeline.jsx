@@ -50,10 +50,10 @@ export default function Timeline() {
     <section className="relative pt-20">
       <div className="max-w-5xl mx-auto px-6">
         {/* Heading */}
-        <h1 className="text-md md:text-xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-blue-600 pb-2">
+        <h1 className="text-md md:text-xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-[#007CC2] to-blue-600 pb-2">
           History
         </h1>
-        <h2 className="kollektif-font text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 text-center">
+        <h2 className="kollektif-font text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#007CC2] to-blue-400 text-center">
           Timeline
         </h2>
         
@@ -64,7 +64,7 @@ export default function Timeline() {
         {/* Timeline */}
         <div className="relative mt-16">
   {/* Timeline line */}
-  <div className="absolute left-[32px] top-6 bottom-0 w-1 bg-gradient-to-b from-blue-500 to-white "></div>
+  <div className="absolute left-[32px] top-6 bottom-0 w-1 bg-gradient-to-b from-[#007CC2] to-white "></div>
 
   <div className="space-y-16">
     {timelineData.map((item, index) => (
@@ -77,13 +77,13 @@ export default function Timeline() {
         transition={{ duration: 1, delay: index * 0.1 }}
       >
         {/* Year marker */}
-        <div className="flex items-center justify-center absolute left-0 top-6 w-16 h-8 bg-blue-500 text-white text-sm font-semibold rounded-md shadow">
+        <div className="flex items-center justify-center absolute left-0 top-6 w-16 h-8 bg-[#007CC2] text-white text-sm font-semibold rounded-md shadow">
           {item.year}
         </div>
 
         {/* Card */}
-        <div className="ml-24 bg-blue-50 dark:bg-gray-900 border border-blue-300 dark:border-blue-600 p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition-transform duration-300 w-full">
-          <h3 className="text-xl md:text-2xl font-bold text-blue-500 kollektif-font mb-2">
+        <div className="ml-24 bg-blue-50 dark:bg-gray-900 border border-[#007CC2] dark:border-blue-600 p-6 rounded-2xl shadow-lg hover:scale-[1.02] transition-transform duration-300 w-full">
+          <h3 className="text-xl md:text-2xl font-bold text-[#007CC2] kollektif-font mb-2">
             {item.title}
           </h3>
           <p className="text-gray-900 dark:text-orange-100 futura-font leading-relaxed">
