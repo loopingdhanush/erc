@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Hero from "./landing_components/Hero";
 import Footer from "./landing_components/footer";
 import Course from "./landing_components/course";
@@ -9,55 +10,59 @@ import Swiperimg from "./landing_components/swiper";
 import FAQ from "./landing_components/faq";
 
 export default function Landing() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    const handleLoad = () => setIsLoaded(true);
+
+    if (document.readyState === "complete") {
+      // Page already loaded
+      setIsLoaded(true);
+    } else {
+      // Wait for full load
+      window.addEventListener("load", handleLoad);
+    }
+
+    return () => window.removeEventListener("load", handleLoad);
+  }, []);
+
+  if (!isLoaded) {
+    return (
+      <div className="flex items-center justify-center h-screen w-screen bg-white">
+        <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-blue-600"></div>
+      </div>
+    );
+  }
+
   return (
-    <div  className="">
-    <div className="h-24 "></div>
-    <div className="max-w-7xl mx-auto px-2 ">
+    <div>
+      <div className="h-24"></div>
 
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-2 ">
+      <div className="max-w-7xl mx-auto px-2">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-2 items-stretch">
+          {/* Left Hero (takes 2 columns) */}
+          <div className="md:col-span-2">
+            <Hero />
+          </div>
 
-  <div className="md:col-span-2 ">
-    <Hero />
-    <div className="flex md:hidden flex-row gap-4 justify-center items-center mt-6">
-      <span className="text-gray-500 ">Scroll</span>
-      <div className="w-6 h-10 border-2 border-gray-500 rounded-full flex justify-center items-start p-1">
-        <div className="w-2 h-2 bg-gray-500 rounded-full animate-bounce mt-1"></div>
+          {/* Right side stacked */}
+          <div className="flex flex-col gap-4 h-full">
+            <div className="flex-1">
+              <Swiperimg />
+            </div>
+            <div className="flex-1">
+              <CalendarEvents />
+            </div>
+          </div>
+        </div>
       </div>
-      <span className="text-gray-500 ">down</span>
-    </div>
-    
-  </div>
 
-
-  <div className="flex flex-col gap-8 md:gap-4">
-    <div className="flex-1 ">
-      <CalendarEvents />
-      
-
-    </div>
-    <div className="flex-1">
-      <div className=" h-full "> 
-          <Swiperimg/>
-      </div>
-    </div>
-  </div>
-</div>
-<div className="md:flex hidden flex-row gap-4 justify-center items-center mt-6">
-      <span className="text-gray-500 ">Scroll</span>
-      <div className="w-6 h-10 border-2 border-gray-500 rounded-full flex justify-center items-start p-1">
-        <div className="w-2 h-2 bg-gray-500 rounded-full animate-bounce mt-1"></div>
-      </div>
-      <span className="text-gray-500 ">down</span>
-    </div>
-</div>
-
-      <About id="about"/>
-      <Course id="benefits"/>
-      <Timeline/>
-      <Final/>
-      <FAQ id="faq"/>
-      <Footer/>
+      <About id="about" />
+      <Course id="benefits" />
+      <Timeline />
+      <Final />
+      <FAQ id="faq" />
+      <Footer />
     </div>
   );
 }
-

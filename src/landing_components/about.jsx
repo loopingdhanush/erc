@@ -58,14 +58,7 @@ export default function About({id}) {
 
         {/* Paragraph */}
         <p className="text-center text-gray-100 mx-4 font-semibold text-shadow-xl">
-          Dr. Madhushankar, Mr. Krishnamoorthy, and Dr. Arunandhi Chelvan
-          established the Erode Runners Club with the goal of inspiring the
-          people of Erode to participate in marathon races. It began with a
-          modest group of ten runners and went on to motivate hundreds more to
-          participate in marathons around the nation. Today, more than 200
-          runners actively participate in running and fitness activities as part
-          of the Erode Runners Club’s lifestyle. We aim to encourage a fit and
-          active lifestyle, enduring friendships, and a feeling of community.
+          Dr. Madhushankar, Mr. Krishnamoorthy, and Dr. Arunandhi Chelvan started the Erode Runners Club to inspire the people of Erode to take part in marathon races. What began with just ten runners has now grown to hundreds who have joined marathons across the country. Today, more than 200 runners actively take part in running and fitness activities as part of the club's lifestyle. Our aim is to promote a fit and active life, build lasting friendships, and create a strong sense of community.
         </p>
 
         {/* Stats */}

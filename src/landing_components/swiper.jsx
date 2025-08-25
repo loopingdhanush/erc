@@ -18,7 +18,7 @@ export default function SwiperImg() {
   return (
  <div className="h-full w-full md:max-w-[400px] flex justify-center">
   <motion.div
-    className="border absolute h-full rounded-2xl max-w-[400px] shadow-2xl relative overflow-hidden md:mx-0 mx-2"
+    className="border absolute h-full rounded-2xl max-w-[400px] shadow-2xl relative overflow-hidden md:mx-0 ml-2"
     initial={{ opacity: 0, y: -60 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, amount: 0.2 }}
@@ -65,12 +65,13 @@ export default function SwiperImg() {
 
         <div className="absolute bottom-8 right-12 flex gap-2 z-10">
             
-          <button className="swiper-button-next bg-white text-blue-600 rounded-lg p-1 full shadow hover:bg-white flex items-center justify-center">
-            <ChevronLeft size={40} />
-          </button>
           <button className="swiper-button-prev bg-white text-blue-600 rounded-lg p-1 shadow hover:bg-white flex items-center justify-center">
             <ChevronRight size={40} />
           </button>
+          <button className="swiper-button-next bg-white text-blue-600 rounded-lg p-1 full shadow hover:bg-white flex items-center justify-center">
+            <ChevronLeft size={40} />
+          </button>
+          
         </div>
       </Swiper>
 

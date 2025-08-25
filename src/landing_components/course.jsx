@@ -3,36 +3,37 @@ import { motion } from "framer-motion";
 
 const courseinfo = [
   {
-    title: "A Strong Community",
-    description: "Stay connected through our dedicated WhatsApp group where members share progress, tips, and motivation every day.",
+    title: "Friendly Runners Group",
+    description: "We have an active WhatsApp group. Members share their daily runs, tips, and motivate each other. There’s always some encouragement waiting for you.",
     icon: "https://img.icons8.com/pulsar-line/100/1E88E5/people-working-together.png",
   },
   {
-    title: "Structured Training Plans",
-    description: "From Couch to 5K to Half Marathon we’ve got tried and tested training programs to help you reach your goals step by step.",
+    title: "Simple Training Plans",
+    description: "From your first 5K to a half marathon, we have easy plans. Just follow step by step, no confusions.",
     icon: "https://img.icons8.com/pulsar-line/100/1E88E5/barbell.png",
   },
   {
-    title: "Race-Day Convenience",
-    description: "No more waiting in long queues. Our club representative collects bibs in advance, so you can focus on running, not logistics.",
+    title: "No Tension on Race Day",
+    description: "Forget long queues. Our club takes care of bib collection. You just come, warm up, and run happily.",
     icon: "https://img.icons8.com/pulsar-line/100/1E88E5/suv.png",
   },
   {
-    title: "Guidance & Mentorship",
-    description: "Experienced runners guide beginners, ensuring everyone feels supported no matter their pace.",
+    title: "Help from Experienced Runners",
+    description: "New runners get full support. Members share their experience, give guidance, and run along with you.",
     icon: "https://img.icons8.com/pulsar-line/100/1E88E5/exercise.png",
   },
   {
-    title: "Exclusive Club Runs & Events",
-    description: "Special weekend runs, night runs, and training challenges keep the momentum alive all year.",
+    title: "Daily Runs & Special Events",
+    description: "We have group runs every day. It keeps the energy alive.",
     icon: "https://img.icons8.com/pulsar-line/100/1E88E5/star.png",
   },
   {
-    title: "Exclusive Club T-Shirt",
-    description: "Show your pride with a personalized runners T-shirt featuring your name and our club logo.",
+    title: "Club T-Shirt",
+    description: "All members get a T-shirt with their name and the club logo. Wear it proudly on every run.",
     icon: "https://img.icons8.com/pulsar-line/100/1E88E5/t-shirt.png",
   },
 ];
+
 
 export default function Course({id}) {
   return (
