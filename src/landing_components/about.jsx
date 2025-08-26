@@ -38,12 +38,9 @@ export default function About({id}) {
     <section id={id} className="relative py-16 mt-8 px-4 max-w-7xl mx-auto rounded-3xl overflow-hidden">
       {/* Background video */}
       <video
-        autoPlay
-        loop
-        muted
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
       >
-        <source src={videoBg} type="video/mp4" />
+        <source src={videoBg}/>
       </video>
 
       {/* Dark overlay for readability */}
@@ -62,11 +59,9 @@ export default function About({id}) {
         </p>
 
         {/* Stats */}
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="mt-12 max-w-md mx-auto gap-6">
           {[
             { value: members, label: "Active Members", icon: "👥" },
-            { value: marathons, label: "Marathons Conducted", icon: "🏃‍♂️" },
-            { value: chapters, label: "Runner's Chapters", icon: "📍" },
           ].map((stat, i) => (
             <motion.div
               key={i}

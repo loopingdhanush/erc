@@ -5,6 +5,7 @@ const events = {
   "2025-08-24": [{ title: "Hyderabad Marathon - 2025", url: "https://nmdchyderabadmarathon.com/" }],
   "2025-11-09": [{ title: "Erode Marathon - 2025", url: "https://erodemarathon.com/" }],
   "2025-08-10": [{ title: "Kangayam Marathon - 2025", url: "https://kangayammarathon.com/" }],
+  "2025-09-05": [{ title: "Erode Runners Club - 5 KM Awareness Run", url: "https://kangayammarathon.com/" }],
 };
 
 function formatMonth(date) {

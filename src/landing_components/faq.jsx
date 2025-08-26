@@ -18,11 +18,6 @@ const faqs = [
     answer:
       "No prior experience is required! We welcome runners of all levels and provide guidance to improve endurance and performance.",
   },
-  {
-    question: "Are there any membership fees?",
-    answer:
-      "Membership costs ₹1,250 annually",
-  },
 ];
 
 export default function FAQ({id}) {

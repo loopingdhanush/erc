@@ -2,46 +2,28 @@ import { motion } from "framer-motion";
 
 const timelineData = [
   {
-    year: "2016",
-    title: "The Start Line",
-    description:
-      "Founded in October 2016 by Dr. Madhushankar, Mr. Krishnamoorthy, and Dr. Arunandhi Chelvan with just 10 passionate runners.",
-  },
-  {
-    year: "2017",
-    title: "Building the Pack",
-    description:
-      "Community runs, weekend gatherings, and steady growth. Formally registered under the Tamil Nadu Societies Registration Act, 1975.",
-  },
-  {
-    year: "2020",
-    title: "Training Takes Shape",
-    description:
-      "Launch of structured programs like Couch to 5K and Couch to 10K. Membership swelled past 200 runners.",
-  },
-  {
     year: "2022",
-    title: "1st Erode Marathon (The Big Debut)",
+    title: "1st Edition Erode Marathon (The Big Debut)",
     description:
       "The inaugural edition of the Erode Marathon took place in 2022, marking the club’s entry into large-scale events.",
   },
   {
     year: "2023",
-    title: "2nd Erode Marathon",
+    title: "2nd Edition Erode Marathon",
     description:
       "A bigger, more organized edition with increased participation and visibility.",
   },
   {
     year: "2024",
-    title: "3rd Erode Marathon",
+    title: "3rd Edition Erode Marathon",
     description:
-      "Cemented the race as the flagship running event of Erode, attracting runners from across Tamil Nadu.",
+      "It became Erode’s flagship running event, drawing runners from across Tamil Nadu",
   },
   {
     year: "2025",
     title: "4th Erode Marathon (Coming Soon!)",
     description:
-      "Scheduled for 9 November 2025. Registrations open July 2025. The club now blends tradition with forward vision.",
+      "Scheduled for 9 November 2025. Registrations open July 2025.",
   },
 ];
 

@@ -8,6 +8,7 @@ import CalendarEvents from "./landing_components/calander";
 import Timeline from "./landing_components/timeline";
 import Swiperimg from "./landing_components/swiper";
 import FAQ from "./landing_components/faq";
+import MarathonPromo from "./marathonpromo";
 
 export default function Landing() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -77,23 +78,26 @@ export default function Landing() {
       <div className="h-24"></div>
 
       <div className="max-w-7xl mx-auto px-2">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-2 items-stretch">
-          {/* Left Hero (takes 2 columns) */}
-          <div className="md:col-span-2">
-            <Hero />
-          </div>
-
-          {/* Right side stacked */}
-          <div className="flex flex-col gap-4 h-full">
-            <div className="flex-1">
-              <Swiperimg />
-            </div>
-            <div className="flex-1">
-              <CalendarEvents />
-            </div>
-          </div>
-        </div>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-2 items-stretch">
+    {/* Left Hero (takes 2 columns) */}
+    <div className="md:col-span-2 flex">
+      <div className="flex-1 h-full">
+        <Hero />
       </div>
+    </div>
+
+    {/* Right side stacked */}
+    <div className="flex flex-col gap-4 h-full">
+      <div className="flex-1">
+        <MarathonPromo />
+      </div>
+      <div className="flex-1">
+        <CalendarEvents />
+      </div>
+    </div>
+  </div>
+</div>
+
 
       <About id="about" />
       <Course id="benefits" />
