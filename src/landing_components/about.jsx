@@ -4,7 +4,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import videoBg from "../assets/video.mp4";
+import erimg1 from "../assets/erimg1.jpg";
+import erimg2 from "../assets/erimg2.jpg";
+import erimg3 from "../assets/erimg3.jpg";
+import erimg4 from "../assets/erimg4.jpg";
+import erimg5 from "../assets/erimg5.jpg";
+import erimg6 from "../assets/erimg6.jpg";
+import erimg7 from "../assets/erimg7.jpg";
+import erimg8 from "../assets/erimg8.jpg";
+import aboutus from "../assets/aboutus.jpg";
+
 
 const useCountUp = (end, duration = 2) => {
   const [count, setCount] = useState(0);
@@ -37,15 +46,16 @@ export default function About({id}) {
     <div className="mx-4">
     <section id={id} className="relative py-16 mt-8 px-4 max-w-7xl mx-auto rounded-3xl overflow-hidden">
       {/* Background video */}
-      <video
+      <img
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        src={aboutus}
       >
-        <source src={videoBg}/>
-      </video>
+        
+      </img>
 
       {/* Dark overlay for readability */}
       <div className="absolute top-0 left-0 w-full h-full bg-black/30 z-0"></div>
-       <div className="absolute top-0 left-0 w-full md:h-96 h-[900px] bg-gradient-to-b from-black/100 to-transparent rounded-t-2xl"></div>
+       <div className="absolute top-0 left-0 w-full  md:h-[900px] h-[1024px]   bg-gradient-to-b from-black/100 to-transparent rounded-t-2xl"></div>
 
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto text-white">
@@ -54,9 +64,13 @@ export default function About({id}) {
         <h1 className="text-3xl md:text-5xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-400 mb-8 pb-2 text-shadow-sm"> The Journey of Erode Runners </h1>
 
         {/* Paragraph */}
-        <p className="text-center text-gray-100 mx-4 font-semibold text-shadow-xl">
-          Dr. Madhushankar, Mr. Krishnamoorthy, and Dr. Arunandhi Chelvan started the Erode Runners Club to inspire the people of Erode to take part in marathon races. What began with just ten runners has now grown to hundreds who have joined marathons across the country. Today, more than 200 runners actively take part in running and fitness activities as part of the club's lifestyle. Our aim is to promote a fit and active life, build lasting friendships, and create a strong sense of community.
-        </p>
+        <p className="text-center text-gray-100 mx-4 text-lg font-semibold text-shadow-xl">
+          Erode Runners Club is a not-for-profit community that began as an informal group of passionate runners in 2016 and became a registered club in 2020. What started with a handful of enthusiasts has now grown into a vibrant running community that brings together people from all walks of life to celebrate fitness, friendship, and the joy of running.
+<br></br><br></br>
+Our members have represented Erode in marathons and ultra marathons across India, carrying the spirit of our city wherever they run.
+<br></br><br></br>
+At the heart of Erode Runners Club is a simple belief: running is for everyone. We are driven by the motto “By the runner, for the runner”, and our mission is to inspire more people to take their first step towards fitness.
+                  </p>
 
         {/* Stats */}
         <div className="mt-12 max-w-md mx-auto gap-6">
@@ -104,21 +118,18 @@ export default function About({id}) {
             }}
           >
             {[
-              "https://eroderunnersclub.com/wp-content/uploads/2024/03/391722641_296559289802157_4348903873984384376_n.jpg",
-              "https://eroderunnersclub.com/wp-content/uploads/2024/03/391702184_296559396468813_5509998848039475028_n.jpg",
-              "https://eroderunnersclub.com/wp-content/uploads/2024/03/391693152_17914549562811887_2037428690816349982_n.jpg",
-              "https://eroderunnersclub.com/wp-content/uploads/2024/03/391675185_297084686416284_7648262738615547471_n.jpg",
-              "https://eroderunnersclub.com/wp-content/uploads/2024/03/winners-scaled.jpg",
+              erimg1,erimg2,erimg3,erimg4,erimg5,erimg6,erimg7,erimg8
             ].map((img, index) => (
               <SwiperSlide key={index}>
-                <div className="bg-white rounded-2xl shadow-md flex justify-center items-center ">
-                  <img
-                    src={img}
-                    alt={`Runner ${index + 1}`}
-                    className="rounded-lg"
-                  />
-                </div>
-              </SwiperSlide>
+  <div className="bg-white rounded-2xl shadow-md flex justify-center items-center h-64 overflow-hidden">
+    <img
+      src={img}
+      alt={`Runner ${index + 1}`}
+      className="w-full h-full object-cover rounded-lg"
+    />
+  </div>
+</SwiperSlide>
+
             ))}
           </Swiper>
         </div>

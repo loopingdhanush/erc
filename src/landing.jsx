@@ -9,6 +9,7 @@ import Timeline from "./landing_components/timeline";
 import Swiperimg from "./landing_components/swiper";
 import FAQ from "./landing_components/faq";
 import MarathonPromo from "./marathonpromo";
+import Founders from "./landing_components/founders";
 
 export default function Landing() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -98,8 +99,9 @@ export default function Landing() {
   </div>
 </div>
 
-
+      
       <About id="about" />
+      <Founders/>
       <Course id="benefits" />
       <Timeline />
       <Final />

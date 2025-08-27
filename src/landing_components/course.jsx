@@ -47,10 +47,10 @@ export default function Course({id}) {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h1 className="kollektif-font text-lg md:text-xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-[#007CC2] to-blue-600 pb-2">
+          <h1 className="text-lg md:text-xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-[#007CC2] to-blue-600 pb-2">
           Benefits
         </h1>
-          <h1 className="kollektif-font text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#007CC2] to-blue-400 text-center" >Why Join Erode Runners?</h1>
+          <h1 className="text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#007CC2] to-blue-400 text-center" >Why Join Erode Runners?</h1>
         </motion.h2>
 
         <motion.p
