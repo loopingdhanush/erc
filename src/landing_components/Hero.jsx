@@ -37,7 +37,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1.2, delay: 0.2 }}
-            className="text-lg mt-5 md:text-xl text-gray-900 max-w-3xl mx-auto text-center"
+            className="text-lg mt-5 md:text-xl text-gray-900 max-w-xl mx-auto text-center"
           >
             Taking even a small step towards your goal is more impactful than
             standing still. Be part of a community that moves together.
