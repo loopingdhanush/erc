@@ -1,7 +1,9 @@
 import React from "react";
-import member2 from "../assets/member1.jpg"; // Dr.G.MADHU SHANKAR
-import member1 from "../assets/member2.jpg"; // Mr.V.Krishnamoorthy
-import presidentPhoto from "../assets/member1.jpg"; // Temporary - replace with formal photo later
+import member2 from "../assets/member1.jpg"; 
+import member1 from "../assets/member2.jpg";
+import member3 from "../assets/member3.jpg";
+import president from "../assets/president.jpg";
+import presidentPhoto from "../assets/member1.jpg"; 
 
 export default function FoundingMembers() {
   return (
@@ -46,7 +48,7 @@ export default function FoundingMembers() {
           {/* Member 3 Placeholder */}
           <div className="bg-white rounded-2xl shadow-md overflow-hidden">
             <img
-              src="https://via.placeholder.com/800x450?text=Photo+Coming+Soon"
+              src={member3}
               alt="Placeholder"
               className="w-full aspect-video object-cover"
             />
@@ -60,35 +62,38 @@ export default function FoundingMembers() {
         </div>
 
         {/* President Spotlight */}
-        <div className="mt-16 text-left bg-white shadow-lg rounded-2xl overflow-hidden">
-          <div className="md:flex">
-            <div className="md:w-1/2">
-              <img
-              src="https://via.placeholder.com/800x450?text=Photo+Coming+Soon"
-              alt="Placeholder"
-              className="w-full aspect-video object-cover"
+<div className="max-w-4xl mx-auto bg-white shadow-lg rounded-2xl overflow-hidden mt-16">
+        <div className="md:flex items-center">
+          {/* Image */}
+          <div className="md:w-1/3 flex justify-center bg-gray-50 p-4">
+            <img
+              src={president}
+              alt="President"
+              className="w-40 h-56 object-cover rounded-xl shadow-md"
             />
-            </div>
-            <div className="p-8 md:w-1/2 flex flex-col justify-center">
-              <h2 className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#007CC2] to-blue-600 mb-2">
-                President
-              </h2>
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                Dr. Arunandhichelvan <br></br> The Heartbeat of Erode Runners Club
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                More than a Surgical Oncologist, Dr. Arunandhichelvan is a
-                runner at heart. A true pillar of the Erode Runners Club, he has
-                inspired countless runners to lace up and chase their dreams.
-                From several Full Marathons to grueling Ultra Marathons, his
-                journey is a testament to endurance, discipline, and the joy of
-                running. With every mile he conquers, he proves that passion and
-                perseverance can push boundaries on the road and in life.
-              </p>
-            </div>
+          </div>
+          {/* Content */}
+          <div className="p-6 md:w-2/3">
+            <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#007CC2] to-blue-600">
+              President
+            </h2>
+            <h3 className="text-lg font-semibold text-gray-800 mt-2">
+              Dr. Arunandhichelvan
+            </h3>
+            <p className="text-sm text-gray-600 mb-4">
+              The Heartbeat of Erode Runners Club
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              More than a Surgical Oncologist, Dr. Arunandhichelvan is a runner
+              at heart. A true pillar of the Erode Runners Club, he has inspired
+              countless runners to lace up and chase their dreams. From several
+              Full Marathons to grueling Ultra Marathons, his journey is a
+              testament to endurance, discipline, and the joy of running.
+            </p>
           </div>
         </div>
       </div>
+</div>
     </section>
   );
 }

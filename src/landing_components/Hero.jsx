@@ -65,7 +65,7 @@ export default function Hero() {
         </div>
 
         {/* Hero Image */}
-        <div className="w-full overflow-hidden relative  md:mt-16 rounded-b-2xl flex-grow">
+        <div className="w-full overflow-hidden relative h-64 md:h-96 md:mt-16 rounded-b-2xl flex-grow">
           <motion.img
             src={heroimage}
             alt="Hero runners"

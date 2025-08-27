@@ -88,7 +88,7 @@ export default function Landing() {
     </div>
 
     {/* Right side stacked */}
-    <div className="flex flex-col gap-4 h-full">
+    <div className="flex flex-col gap-4 h-full ">
       <div className="flex-1">
         <MarathonPromo />
       </div>
