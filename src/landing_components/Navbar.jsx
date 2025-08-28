@@ -53,25 +53,23 @@ export default function Navbar() {
                 onClick={() =>
                   window.scrollTo({ top: 0, behavior: "smooth" })
                 }
-                className="font-medium border-r border-gray-800 pr-4"
+                className="font-semibold border-r border-gray-800 pr-4"
               >
                 Home
               </button>
               <button
                 onClick={() => scrollTo("about")}
-                className="font-medium border-r border-gray-800 pr-4"
+                className="font-semibold border-r border-gray-800 pr-4"
               >
                 About Us
               </button>
               <button
                 onClick={() => scrollTo("benefits")}
-                className="font-medium border-r border-gray-800 pr-4"
+                className="font-semibold  pr-4"
               >
                 Benefits
               </button>
-              <button onClick={() => scrollTo("faq")} className="font-medium">
-                FAQ
-              </button>
+              
             </div>
 
             {/* Desktop Contact */}
@@ -152,12 +150,6 @@ export default function Navbar() {
           className="font-medium cursor-pointer"
         >
           Benefits
-        </button>
-        <button
-          onClick={() => scrollTo("faq")}
-          className="font-medium cursor-pointer"
-        >
-          FAQ
         </button>
 
         <button

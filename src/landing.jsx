@@ -104,8 +104,7 @@ export default function Landing() {
       <Founders/>
       <Course id="benefits" />
       <Timeline />
-      <Final />
-      <FAQ id="faq" />
+   
       <Footer />
     </div>
   );

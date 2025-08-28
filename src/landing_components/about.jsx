@@ -12,6 +12,8 @@ import erimg5 from "../assets/erimg5.jpg";
 import erimg6 from "../assets/erimg6.jpg";
 import erimg7 from "../assets/erimg7.jpg";
 import erimg8 from "../assets/erimg8.jpg";
+import erimg9 from "../assets/erimg9.jpg";
+import erimg10 from "../assets/erimg10.jpg";
 import aboutus from "../assets/aboutus.jpg";
 
 
@@ -106,7 +108,7 @@ At the heart of Erode Runners Club is a simple belief: running is for everyone. 
             freeModeMomentum={false}
             slidesPerView={1}
             spaceBetween={20}
-            speed={2000} // slower continuous scroll
+            speed={4000} 
             autoplay={{
               delay: 0,
               disableOnInteraction: false,
@@ -117,9 +119,7 @@ At the heart of Erode Runners Club is a simple belief: running is for everyone. 
               1024: { slidesPerView: 3 },
             }}
           >
-            {[
-              erimg1,erimg2,erimg3,erimg4,erimg5,erimg6,erimg7,erimg8
-            ].map((img, index) => (
+            {[erimg1,erimg2,erimg3,erimg4,erimg5,erimg6,erimg7,erimg8,erimg9,erimg10].map((img, index) => (
               <SwiperSlide key={index}>
   <div className="bg-white rounded-2xl shadow-md flex justify-center items-center h-64 overflow-hidden">
     <img

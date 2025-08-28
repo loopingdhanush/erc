@@ -83,9 +83,18 @@ export default function Footer() {
       </div>
 
       {/* Bottom strip */}
-      <div className="mt-10 border-t border-gray-700 pt-6 text-center text-gray-500 kollektif-font">
-        © {new Date().getFullYear()} Erode Runners Club
-      </div>
+      <div className="mt-10 border-t border-gray-700 pt-6 px-6 flex flex-col md:flex-row items-center justify-between">
+  {/* Left side - small text */}
+  <p className="text-sm text-gray-500 mb-3 md:mb-0">
+    Proudly made by students of <a className="hover:text-orange-300 transition fade-in-out"><span className="font-semibold">Easy Exam Academy</span></a>
+  </p>
+
+  {/* Right side - main copyright */}
+  <p className="text-gray-500 kollektif-font text-center md:text-right">
+    © {new Date().getFullYear()} Erode Runners Club <br></br>All Rights Reserved
+  </p>
+</div>
+
     </footer>
   );
 }

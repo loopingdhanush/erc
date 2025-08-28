@@ -49,9 +49,12 @@ export default function Hero() {
             transition={{ duration: 1.2, delay: 0.3 }}
             className="flex flex-wrap gap-4 mt-8 mx-auto justify-center items-center"
           >
-            <button className="w-48 px-5 py-2 text-sm font-semibold text-white bg-[#007CC2] border-2 border-blue-900 rounded-xl hover:bg-[#007cc2] transition-colors duration-200">
+            <a className="w-48 px-5 py-2 text-sm font-semibold text-white text-center bg-[#007CC2] border-2 border-blue-900 rounded-xl hover:bg-[#007cc2] transition-colors duration-200"
+            href="https://www.erodemarathon.com"
+                        target="_blank"
+                        rel="noopener noreferrer">
               Erode Marathon 2025
-            </button>
+            </a>
 
             <button
               onClick={() =>
