@@ -40,7 +40,7 @@ export default function Course({id}) {
     <section id={id} className="relative bg-white ">
       <div className="mx-4 md:pt-20 pt-10">
         
-        <motion.h2
+        <motion.div
           
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -51,7 +51,7 @@ export default function Course({id}) {
           Benefits
         </h1>
           <h1 className="text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#007CC2] to-blue-400 text-center" >Why Join Erode Runners?</h1>
-        </motion.h2>
+        </motion.div>
 
         <motion.p
           className="text-xl text-gray-800 dark:text-orange-100 text-center max-w-3xl mx-auto mt-8 mb-6 md:mb-12 futura-font"
