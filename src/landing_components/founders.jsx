@@ -54,7 +54,7 @@ export default function FoundingMembers() {
             />
             <div className="p-4">
               <h3 className="text-lg font-semibold text-gray-800">
-                Dr.A.Arunanadhi Chelvan
+                Dr.A.Arunandhi Chelvan
               </h3>
               <p className="text-sm text-gray-600">Founding Member</p>
             </div>
@@ -78,13 +78,13 @@ export default function FoundingMembers() {
               President
             </h2>
             <h3 className="text-lg font-semibold text-gray-800 mt-2">
-              Dr.A.Arunanadhi Chelvan
+              Dr.A.Arunandhi Chelvan
             </h3>
             <p className="text-sm text-gray-600 mb-4">
               The Heartbeat of Erode Runners Club
             </p>
             <p className="text-gray-700 leading-relaxed">
-              More than a Surgical Oncologist, Dr. Arunandhichelvan is a runner
+              More than a Surgical Oncologist, Dr. Arunandhi chelvan is a runner
               at heart. A true pillar of the Erode Runners Club, he has inspired
               countless runners to lace up and chase their dreams. From several
               Full Marathons to grueling Ultra Marathons, his journey is a
