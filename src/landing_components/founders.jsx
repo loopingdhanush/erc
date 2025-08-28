@@ -54,7 +54,7 @@ export default function FoundingMembers() {
             />
             <div className="p-4">
               <h3 className="text-lg font-semibold text-gray-800">
-                Dr.Arunanadhichelvan
+                Dr.A.Arunanadhi Chelvan
               </h3>
               <p className="text-sm text-gray-600">Founding Member</p>
             </div>
@@ -78,7 +78,7 @@ export default function FoundingMembers() {
               President
             </h2>
             <h3 className="text-lg font-semibold text-gray-800 mt-2">
-              Dr. Arunandhichelvan
+              Dr.A.Arunanadhi Chelvan
             </h3>
             <p className="text-sm text-gray-600 mb-4">
               The Heartbeat of Erode Runners Club
