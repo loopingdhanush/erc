@@ -34,7 +34,7 @@ export default function MarathonPromo() {
 
         {/* Button */}
         <a
-          href="https://eroderunnersclub.com"
+          href="https://forms.gle/MZExg5iK5b8ym6o16"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-[#007CC2] text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition border-2 border-blue-800"
