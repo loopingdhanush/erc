@@ -41,13 +41,13 @@ export default function CalendarEvents() {
   const today = new Date().toDateString();
 
   return (
-    <section className=" px-4 text-center">
+    <section className="h-full flex flex-col">
       {/* Section Heading */}
-      <h2 className="text-xl md:text-xl font-bold text-[#374291] mb-2">
-       Marathon Events Calendar
+      <h2 className="text-xl md:text-xl font-bold text-[#374291] mb-2 text-center">
+        Marathon Events Calendar
       </h2>
 
-      <div className="max-w-md mx-auto md:mx-0 md:max-w-[400px] bg-white rounded-2xl border shadow-lg p-4 ">
+      <div className="flex-1 bg-white rounded-2xl border shadow-lg p-4 flex flex-col">
         {/* Blink style */}
         <style>
           {`
@@ -62,25 +62,25 @@ export default function CalendarEvents() {
         </style>
 
         {/* Header */}
-        <div className="flex justify-between items-center border-b pb-2">
+        <div className="flex justify-between items-center border-b pb-2 mb-4">
           <button onClick={prevMonth}><ChevronLeft /></button>
           <h2 className="font-bold">{formatMonth(currentMonth)}</h2>
           <button onClick={nextMonth}><ChevronRight /></button>
         </div>
 
-        {/* Content Wrapper */}
-        <div className="mt-4 min-h-[300px] flex flex-col">
+        {/* Content Wrapper - fixed height to prevent expansion */}
+        <div className="flex flex-col min-h-0" style={{ height: '280px' }}>
           {!selectedDate ? (
             <>
               {/* Day names */}
               <div className="grid grid-cols-7 text-center font-semibold text-gray-600 mb-2">
                 {dayNames.map((day, idx) => (
-                  <div key={idx}>{day}</div>
+                  <div key={idx} className="text-sm">{day}</div>
                 ))}
               </div>
 
-              {/* Dates */}
-              <div className="grid grid-cols-7 gap-2 flex-1">
+              {/* Dates - takes remaining space */}
+              <div className="grid grid-cols-7 gap-1 flex-1">
                 {/* Empty slots before first day */}
                 {Array.from({ length: firstDayIndex }).map((_, idx) => (
                   <div key={idx}></div>
@@ -101,7 +101,7 @@ export default function CalendarEvents() {
                     <div
                       key={day}
                       onClick={() => hasEvent && setSelectedDate(dateStr)}
-                      className={`flex items-center justify-center p-2 rounded cursor-pointer transition
+                      className={`flex items-center justify-center p-1 md:p-2 rounded cursor-pointer transition text-sm
                         ${hasEvent ? "bg-blue-300 hover:bg-blue-200 blink" : "bg-gray-50"}
                         ${dateStr === today ? "ring-2 ring-blue-600 font-bold" : ""}`}
                     >
@@ -119,8 +119,8 @@ export default function CalendarEvents() {
               </div>
             </>
           ) : (
-            /* Event list */
-            <div className="flex-1 flex flex-col">
+            /* Event list - fixed height container */
+            <div className="flex flex-col h-full">
               <button
                 onClick={() => setSelectedDate(null)}
                 className="text-blue-600 mb-2 border border-blue-500 px-3 py-1 rounded-xl flex items-center w-fit"
@@ -128,29 +128,31 @@ export default function CalendarEvents() {
                 <ChevronLeft className="mr-1" /> Back
               </button>
               <h3 className="font-bold mb-2">
-                Events on {new Date(selectedDate).toDateString()}
+                Events on {new Date(selectedDate).toLocaleDateString()}
               </h3>
-              <ul className="space-y-2">
-                {events[
-                  Object.keys(events).find(
-                    (d) => new Date(d).toDateString() === selectedDate
-                  )
-                ]?.map((event, idx) => (
-                  <li
-                    key={idx}
-                    className="p-2 border rounded hover:bg-blue-50 transition"
-                  >
-                    <a
-                      href={event.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-700" 
+              <div className="flex-1 overflow-y-auto">
+                <ul className="space-y-2">
+                  {events[
+                    Object.keys(events).find(
+                      (d) => new Date(d).toDateString() === selectedDate
+                    )
+                  ]?.map((event, idx) => (
+                    <li
+                      key={idx}
+                      className="p-2 border rounded hover:bg-blue-50 transition"
                     >
-                      {event.title}
-                    </a>
-                  </li>
-                ))}
-              </ul>
+                      <a
+                        href={event.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-700" 
+                      >
+                        {event.title}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           )}
         </div>

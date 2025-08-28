@@ -79,32 +79,30 @@ export default function Landing() {
       <div className="h-24"></div>
 
       <div className="max-w-7xl mx-auto px-2">
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-2 items-stretch">
-    {/* Left Hero (takes 2 columns) */}
-    <div className="md:col-span-2 flex">
-      <div className="flex-1 h-full">
-        <Hero />
-      </div>
-    </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6" style={{ minHeight: '70vh' }}>
+          {/* Left Hero (takes 2 columns) */}
+          <div className="md:col-span-2 flex">
+            <div className="flex-1">
+              <Hero />
+            </div>
+          </div>
 
-    {/* Right side stacked */}
-    <div className="flex flex-col gap-4 h-full ">
-      <div className="flex-1">
-        <MarathonPromo />
+          {/* Right side stacked - both components will share equal height */}
+          <div className="flex flex-col gap-4">
+            <div className="flex-1">
+              <MarathonPromo />
+            </div>
+            <div className="flex-1">
+              <CalendarEvents />
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="flex-1">
-        <CalendarEvents />
-      </div>
-    </div>
-  </div>
-</div>
 
-      
       <About id="about" />
       <Founders/>
       <Course id="benefits" />
       <Timeline />
-   
       <Footer />
     </div>
   );

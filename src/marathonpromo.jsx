@@ -5,7 +5,7 @@ import marathonPoster from "./assets/promo.jpg";
 export default function MarathonPromo() {
   return (
     <motion.div
-      className="relative max-w-md mx-2 md:mx-auto md:mx-0 md:max-w-[400px] bg-white rounded-2xl border shadow-lg overflow-hidden"
+      className="relative h-full bg-white rounded-2xl border shadow-lg overflow-hidden"
       initial={{ opacity: 0, y: -40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}

@@ -1,11 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import heroimage from "../assets/heroimg.webp";
+import heroimagem from "../assets/heroimg.png";
+
 
 export default function Hero() {
   return (
-    <div className="px-2">
-      <section className="relative flex flex-col bg-gradient-to-t from-white to-white rounded-3xl border-2 border-[#374291] overflow-hidden h-screen">
+    <div className="px-2 h-full">
+      <section className="relative flex flex-col bg-gradient-to-t from-white to-white rounded-3xl border-2 border-[#374291] overflow-hidden h-full">
         <div className="pt-12 px-6 flex flex-col relative z-10 flex-grow">
           <motion.span
             initial={{ opacity: 0, y: -20 }}
@@ -13,7 +15,7 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
             className="text-md text-gray-900 mb-2 inline-block mx-auto text-center"
           >
-            <span className="font-semibold">Erode’s</span> Running Community,
+            <span className="font-semibold">Erode's</span> Running Community,
             Stronger Together
           </motion.span>
 
@@ -68,16 +70,16 @@ export default function Hero() {
         </div>
 
         {/* Hero Image */}
-        <div className="w-full overflow-hidden relative h-64 md:h-96 md:mt-16 rounded-b-2xl flex-grow">
+        <div className="w-full overflow-hidden relative flex-grow rounded-b-2xl mt-10">
           <motion.img
-            src={heroimage}
+            src={heroimagem}
             alt="Hero runners"
             loading="eager"
             decoding="async"
             initial={{ opacity: 0, scale: 1.05 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover "
           />
         </div>
       </section>
