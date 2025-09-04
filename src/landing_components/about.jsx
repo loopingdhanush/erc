@@ -14,6 +14,12 @@ import erimg7 from "../assets/erimg7.jpg";
 import erimg8 from "../assets/erimg8.jpg";
 import erimg9 from "../assets/erimg9.jpg";
 import erimg10 from "../assets/erimg10.jpg";
+import erimg11 from "../assets/erimg11.jpg";
+import erimg12 from "../assets/erimg12.jpg";
+import erimg13 from "../assets/erimg13.jpg";
+import erimg14 from "../assets/erimg14.jpg";
+import erimg15 from "../assets/erimg15.jpg";
+import erimg16 from "../assets/erimg16.jpg";
 import aboutus from "../assets/aboutus.jpg";
 
 
@@ -119,20 +125,60 @@ At the heart of Erode Runners Club is a simple belief: running is for everyone. 
               1024: { slidesPerView: 3 },
             }}
           >
-            {[erimg1,erimg2,erimg3,erimg4,erimg5,erimg6,erimg7,erimg8,erimg9,erimg10].map((img, index) => (
+            {[erimg1,erimg12,erimg3,erimg4,erimg5,erimg6,erimg7,erimg8].map((img, index) => (
               <SwiperSlide key={index}>
-  <div className="bg-white rounded-2xl shadow-md flex justify-center items-center h-64 overflow-hidden">
-    <img
-      src={img}
-      alt={`Runner ${index + 1}`}
-      className="w-full h-full object-cover rounded-lg"
-    />
-  </div>
-</SwiperSlide>
+                <div className="bg-white rounded-2xl shadow-md flex justify-center items-center h-64 overflow-hidden">
+                  <img
+                    src={img}
+                    alt={`Runner ${index + 1}`}
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                </div>
+              </SwiperSlide>
 
             ))}
+
+            
           </Swiper>
         </div>
+
+        <div className="mt-16">
+          <Swiper
+            modules={[Autoplay]}
+            loop={true}
+            freeMode={true}
+            freeModeMomentum={false}
+            slidesPerView={1}
+            spaceBetween={20}
+            speed={4000} 
+            autoplay={{
+              delay: 0,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: false,
+              reverseDirection: true
+            }}
+            breakpoints={{
+              640: { slidesPerView: 2, },
+              1024: { slidesPerView: 3 },
+            }}
+          >
+            {[erimg9,erimg10,erimg11,erimg2,erimg13,erimg14,erimg15,erimg16].map((img, index) => (
+              <SwiperSlide key={index}>
+                <div className="bg-white rounded-2xl shadow-md flex justify-center items-center h-64 overflow-hidden">
+                  <img
+                    src={img}
+                    alt={`Runner ${index + 1}`}
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                </div>
+              </SwiperSlide>
+
+            ))}
+
+            
+          </Swiper>
+        </div>
+
     </div>
   );
 }
