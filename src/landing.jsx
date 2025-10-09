@@ -78,7 +78,7 @@ export default function Landing() {
     <div className="bg-white dark:bg-black text-black transition-colors duration-500 ease-in-out">
       <div className="h-24 "></div>
 
-      <div className="max-w-7xl mx-auto px-2">
+      <div className="max-w-7xl mx-auto px-2 ">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6" style={{ minHeight: '70vh' }}>
           {/* Left Hero (takes 2 columns) */}
           <div className="md:col-span-2 flex">

@@ -21,15 +21,17 @@ export default function MarathonPromo() {
       />
 
       {/* Overlay with CTA */}
-      <div className="absolute bottom-0 left-0  bg-black/50 backdrop-blur-md p-4  flex flex-col items-start justify-end rounded-tr-3xl">
+      <div className="absolute bottom-0 left-0 right-0 bg-black/50 backdrop-blur-md px-4 md:px-6 py-3 flex flex-row justify-between rounded-t-3xl">
         {/* Text */}
         
-          <h3 className="text-md md:text-xl font-bold text-white">
+        <div>
+          <h3 className="text-sm md:text-xl font-bold text-white">
             Erode Marathon 2025
           </h3>
-          <p className="text-sm font-bold text-white">
-            November 9, 2025
+          <p className="text-xs font-bold text-white">
+            November 16, 2025
           </p>
+        </div>
         
 
         {/* Button */}
@@ -37,10 +39,11 @@ export default function MarathonPromo() {
           href="https://erodemarathon.com/"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-yellow-300 text-black px-4 py-2 mt-2 rounded-lg font-bold hover:bg-blue-500 hover:text-white transition"
+          className="bg-yellow-300 text-black px-4 py-2  text-sm md:text-xl rounded-lg font-bold hover:bg-blue-500 hover:text-white transition"
         >
           Register Now
         </a>
+        
       </div>
     </motion.div>
   );

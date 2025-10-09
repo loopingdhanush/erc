@@ -11,7 +11,7 @@ const events = {
   "2025-10-12": [{ title: "Erode Runners Club - 10 KM Run at VOC Ground (Sathy Road)" , assemble: "Start Time - 5:30 AM" }],
   "2025-10-26": [{ title: "Erode Runners Club - 10 KM Run at Pallipalayam" , assemble: "Start Time - 5:30 AM" }],
   "2025-11-02": [{ title: "Erode Runners Club - Strength Training at TUFF" , assemble: "Start Time - 6:00 AM" }],
-  "2025-11-09": [{ title: "Erode Marathon - 2025", assemble: "" , url: "https://erodemarathon.com/" }],
+  "2025-11-16": [{ title: "Erode Marathon - 2025", assemble: "" , url: "https://erodemarathon.com/" }],
 };
 
 function formatMonth(date) {
