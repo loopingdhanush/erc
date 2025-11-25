@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import marathonPoster from "./assets/em-25.jpg";
+import marathonPoster from "./assets/membership.jpg";
 
 export default function MarathonPromo() {
   return (
@@ -26,20 +26,20 @@ export default function MarathonPromo() {
         
         <div>
           <h3 className="text-sm md:text-xl font-bold text-white">
-            Erode Marathon 2025
+            Erode Runners Club
           </h3>
           <p className="text-xs font-bold text-white">
-            November 16, 2025
+            Membership Registration
           </p>
         </div>
         
 
         {/* Button */}
         <a
-          href="https://erodemarathon.com/"
+          href="https://forms.gle/TGfAd2FFHpeP65xf7"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-yellow-300 text-black px-4 py-2  text-sm md:text-xl rounded-lg font-bold hover:bg-blue-500 hover:text-white transition"
+          className="bg-blue-200 text-black px-4 py-2  text-sm md:text-xl rounded-lg font-bold hover:bg-blue-100 transition"
         >
           Register Now
         </a>
