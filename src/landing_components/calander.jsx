@@ -2,16 +2,53 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const events = {
-  "2025-09-05": [{ title: "Erode Runners Club - 5 KM Awareness Run at Erode Collector Office", assemble: "Start Time - 5:30 AM" }],
-  "2025-09-07": [{ title: "Gobi Marathon - 2025", assemble: "" ,url:"https://gobimarathon.in/" }],
-  "2025-09-14": [{ title: "Erode Runners Club - 10 KM Run at SPB Colony" , assemble: "Start Time - 5:30 AM" }],
-  "2025-09-21": [{ title: "Erode Runners Club - 10 KM Run at Railway Institute (Poonduari Road)" , assemble: "Start Time - 5:30 AM" }],
-  "2025-09-28": [{ title: "Erode Runners Club - 10 KM Run at Flyover" , assemble: "Start Time - 5:30 AM" }],
-  "2025-10-05": [{ title: "Erode Runners Club - Strength Training at Railway Institute" , assemble: "Start Time - 6:00 AM" }],
-  "2025-10-12": [{ title: "Erode Runners Club - 10 KM Run at VOC Ground (Sathy Road)" , assemble: "Start Time - 5:30 AM" }],
-  "2025-10-26": [{ title: "Erode Runners Club - 10 KM Run at Pallipalayam" , assemble: "Start Time - 5:30 AM" }],
-  "2025-11-02": [{ title: "Erode Runners Club - Strength Training at TUFF" , assemble: "Start Time - 6:00 AM" }],
-  "2025-11-16": [{ title: "Erode Marathon - 2025", assemble: "" , url: "https://erodemarathon.com/" }],
+  "2026-01-01": [
+    { title: "New Year Group Run", assemble: "" }
+  ],
+  "2026-01-04": [
+    { title: "Chennai Marathon", assemble: "" },
+    { title: "Mutthu Marathon", assemble: "" }
+  ],
+  "2026-01-11": [
+    { title: "ERC Monthly Group Run", assemble: "" },
+    { title: "Palakkad Marathon", assemble: "" }
+  ],
+  "2026-01-14": [
+    { title: "Pongal Get Together & ERC Awards Function", assemble: "" }
+  ],
+  "2026-01-18": [
+    { title: "Mumbai Marathon", assemble: "" },
+    { title: "Kalingarayan Marathon", assemble: "" }
+  ],
+  "2026-01-31": [
+    { title: "Coimbatore Backyard Ultra", assemble: "" }
+  ],
+
+  "2026-02-01": [
+    { title: "Kauvery Marathon – Chennai", assemble: "" }
+  ],
+  "2026-02-07": [
+    { title: "Chennai Trackathon – 6 Hrs & 12 Hrs", assemble: "" }
+  ],
+  "2026-02-08": [
+    { title: "ERC Monthly Group Run", assemble: "" },
+    { title: "Auroville Marathon", assemble: "" },
+    { title: "Kochi Marathon", assemble: "" }
+  ],
+  "2026-02-14": [
+    { title: "Valentines Day Run", assemble: "" }
+  ],
+  "2026-02-22": [
+    { title: "CBE Womens Marathon", assemble: "" },
+    { title: "Annur Marathon", assemble: "" }
+  ],
+
+  "2026-03-08": [
+    { title: "ERC Monthly Group Run", assemble: "" }
+  ],
+  "2026-03-22": [
+    { title: "Ooty Ultra", assemble: "" }
+  ]
 };
 
 function formatMonth(date) {
