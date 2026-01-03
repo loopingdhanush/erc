@@ -15,16 +15,22 @@ const events = {
   "2026-01-18": [
     { title: "Mumbai Marathon", url: "https://tatamumbaimarathon.procam.in/" },
     { title: "Kalingarayan Marathon" }
-
   ],
   "2026-01-31": [{ title: "Coimbatore Backyard Ultra", url:"https://battlegroundindia.odoo.com/coimbatorebackyardultra" }],
-  "2026-02-07": [{ title: "Chennai Trackathon 6Hrs & 12Hrs" }],
+
+  "2026-02-01": [{ title: "Kauvery Marathon Chennai", url:"https://k10k.run/" }],
+  "2026-02-07": [{ title: "Chennai Trackathon 6Hrs & 12Hrs" },
+    { title: "Auroville Marathon", url:"https://www.aurovillemarathon.com/" },
+    { title: "kochi marathon", url:"https://www.kochimarathon.in/" }
+  ],
   "2026-02-08": [{ title: "ERC Monthly Group Run" }],
   "2026-02-14": [{ title: "Valentines Day Run" }],
   "2026-02-22": [
     { title: "Coimbatore Womens Marathon", url: "https://coimbatorewomensmarathon.com/" },
     { title: "Annur Marathon", url: "https://annurmarathon.com/" },
   ],
+
+
   "2026-03-08": [{ title: "ERC Monthly Group Run" }],
   "2026-03-22": [{ title: "Ooty Ultra", url: "https://ootyultra.com/" }],
 };
