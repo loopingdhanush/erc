@@ -2,53 +2,31 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const events = {
-  "2026-01-01": [
-    { title: "New Year Group Run", assemble: "" }
-  ],
+  "2026-01-01": [{ title: "New Year Group Run" }],
   "2026-01-04": [
-    { title: "Chennai Marathon", assemble: "" },
-    { title: "Mutthu Marathon", assemble: "" }
+    { title: "Chennai Marathon", url: "https://www.thechennaimarathon.com/index.html" },
+    { title: "Mutthu Marathon", url: "https://mutthumarathon.org/" },
   ],
   "2026-01-11": [
-    { title: "ERC Monthly Group Run", assemble: "" },
-    { title: "Palakkad Marathon", assemble: "" }
+    { title: "ERC Monthly Group Run" },
+    { title: "Palakkad Marathon", url: "https://www.palakkadmarathon.com/" },
   ],
-  "2026-01-14": [
-    { title: "Pongal Get Together & ERC Awards Function", assemble: "" }
-  ],
+  "2026-01-14": [{ title: "Pongal Get Together & ERC Awards Function" }],
   "2026-01-18": [
-    { title: "Mumbai Marathon", assemble: "" },
-    { title: "Kalingarayan Marathon", assemble: "" }
-  ],
-  "2026-01-31": [
-    { title: "Coimbatore Backyard Ultra", assemble: "" }
-  ],
+    { title: "Mumbai Marathon", url: "https://tatamumbaimarathon.procam.in/" },
+    { title: "Kalingarayan Marathon" }
 
-  "2026-02-01": [
-    { title: "Kauvery Marathon – Chennai", assemble: "" }
   ],
-  "2026-02-07": [
-    { title: "Chennai Trackathon – 6 Hrs & 12 Hrs", assemble: "" }
-  ],
-  "2026-02-08": [
-    { title: "ERC Monthly Group Run", assemble: "" },
-    { title: "Auroville Marathon", assemble: "" },
-    { title: "Kochi Marathon", assemble: "" }
-  ],
-  "2026-02-14": [
-    { title: "Valentines Day Run", assemble: "" }
-  ],
+  "2026-01-31": [{ title: "Coimbatore Backyard Ultra", url:"https://battlegroundindia.odoo.com/coimbatorebackyardultra" }],
+  "2026-02-07": [{ title: "Chennai Trackathon 6Hrs & 12Hrs" }],
+  "2026-02-08": [{ title: "ERC Monthly Group Run" }],
+  "2026-02-14": [{ title: "Valentines Day Run" }],
   "2026-02-22": [
-    { title: "CBE Womens Marathon", assemble: "" },
-    { title: "Annur Marathon", assemble: "" }
+    { title: "Coimbatore Womens Marathon", url: "https://coimbatorewomensmarathon.com/" },
+    { title: "Annur Marathon", url: "https://annurmarathon.com/" },
   ],
-
-  "2026-03-08": [
-    { title: "ERC Monthly Group Run", assemble: "" }
-  ],
-  "2026-03-22": [
-    { title: "Ooty Ultra", assemble: "" }
-  ]
+  "2026-03-08": [{ title: "ERC Monthly Group Run" }],
+  "2026-03-22": [{ title: "Ooty Ultra", url: "https://ootyultra.com/" }],
 };
 
 function formatMonth(date) {
